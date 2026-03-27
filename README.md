@@ -27,17 +27,18 @@ client-disconnect "/usr/local/bin/ovpnstatus.sh"
 In the OpenVPN configuration, client-disconnect is used.
 This option runs a script when the client disconnects and passes the following environment variables to the script:
 
-Variable:                       Description:
-common_name                     Common Name (CN) of the client certificate
-trusted_ip                      Actual IP address of the connected client
-trusted_port                    Client port
-ifconfig_pool_remote_ip	        Virtual IP address assigned to the client
-bytes_received	                Total number of bytes received from the client during the session
-bytes_sent	                    Total number of bytes sent to the client during the session
-time_duration	                Client session duration in seconds
-username	                    Username (if auth-user-pass authentication is used)
-time_ascii	                    Connection time (human-readable format)
-time_unix	                    Connection time (Unix timestamp)
+Variable                       | Description
+-------------------------------|------------------------------------------
+`common_name`                  | Common Name (CN) of the client certificate
+`trusted_ip`                   | Actual IP address of the connected client
+`trusted_port`                 | Client port
+`ifconfig_pool_remote_ip`      | Virtual IP address assigned to the client
+`bytes_received`               | Total number of bytes received from the client during the session
+`bytes_sent`                   | Total number of bytes sent to the client during the session
+`time_duration`                | Client session duration in seconds
+`username`                     | Username (if auth-user-pass authentication is used)
+`time_ascii`                   | Connection time (human-readable format)
+`time_unix`                    | Connection time (Unix timestamp)
 
 ## Start
 The script runs automatically when the client disconnects.
