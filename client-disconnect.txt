@@ -1,0 +1,19 @@
+Переменная:                 Описание:
+
+common_name                 Имя (CN) сертификата клиента
+trusted_ip                  Реальный IP-адрес подключенного клиента
+trusted_port                Порт клиента
+ifconfig_pool_remote_ip	    Виртуальный IP-адрес, выданный клиенту
+bytes_received              Общее количество байт, полученных от клиента за сессию
+bytes_sent                  Общее количество байт, отправленных клиенту за сессию
+time_duration               Длительность сессии клиента в секундах
+username                    Имя пользователя (если используется аутентификация auth-user-pass)
+time_ascii	                Время подключения
+time_unix	                Время подключения (timestamp)
+time_duration	            Длительность сессии в секундах
+
+ls -l /var/db/ovpnstatus/
+drwxrwxr-x  2 root nobody ovpnstatus
+
+ls -l /var/db/ovpnstatus/ovpnstatus.db
+-rwxrwxr-x  1 root nobody /var/db/ovpnstatus/ovpnstatus.db
