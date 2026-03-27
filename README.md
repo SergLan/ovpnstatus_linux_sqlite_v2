@@ -40,9 +40,15 @@ Variable                       | Description
 `time_ascii`                   | Connection time (human-readable format)
 `time_unix`                    | Connection time (Unix timestamp)
 
+OpenVPN is usually run as "nobody" user.
+Don't forget to give the user/group nobody read-write access to the ovpnstatus.db file.
+```
+ls -l /var/db/ovpnstatus/ovpnstatus.db
+-rwxrwxr-x  1 root nobody /var/db/ovpnstatus/ovpnstatus.db
+```
+
 ## Start
 The script runs automatically when the client disconnects.
-
 
 ## SQLite
 Several commands for viewing tables in a database:
